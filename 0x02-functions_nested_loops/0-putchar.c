@@ -2,7 +2,6 @@
 
 /**
 *main - function prints text as output
-*
 *Return:return 0
 */
 
