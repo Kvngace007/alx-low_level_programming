@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 *main - function prints text as output
 *
