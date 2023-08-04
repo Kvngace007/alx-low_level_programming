@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 	unsigned int tot_val = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
 	for (i = 0; b[i]; i++)
@@ -20,7 +20,8 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] < '0' || b[i] > '1')
 			return (0);
 
-		tot_val = 2 * tot_val + (b[i] - '0');
+		Tot_val = 2 * tot_val+ (b[i] - '0');
 	}
 
 	return (tot_val);
+}

@@ -10,12 +10,12 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	Int R-bit;
+	unsigned long int R_bit;
 
 	if (index > 64)
 		return (-1);
 
-	R_bit = (n >> index) & 1;
+	R_bit = n >> index;
 
-	return (R_bit);
+	return (R_bit & 1);
 }

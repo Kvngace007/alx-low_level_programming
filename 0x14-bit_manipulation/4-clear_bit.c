@@ -1,4 +1,5 @@
-#include "main.h"
+
+0;276;0c#include "main.h"
 #include <stdio.h>
 
 /**
@@ -10,11 +11,14 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
+        unsigned int dec;
+	unsigned long int i;
+
 	if (index > 64)
 		return (-1);
 
 	dec = index;
-	for (i = 1; hold > 0; i *= 2, dec--)
+	for (i = 1; dec > 0; i *= 2, dec--)
 		;
 
 	if ((*n >> index) & 1)
