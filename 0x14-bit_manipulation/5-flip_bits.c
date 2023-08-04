@@ -11,16 +11,16 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int chag;
-	int counter;
+	int value;
 
 	chag = n ^ m;
-	counts = 0;
+	value = 0;
 
 	while (chag)
 	{
-		counter++;
+		value++;
 		chag &= (chag - 1);
 	}
 
-	return (counts);
+	return (value);
 }
